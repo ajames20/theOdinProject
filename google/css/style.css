@@ -1,0 +1,102 @@
+body {
+    font-family: arial, sans-serif;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.header {
+    float: right;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+
+.logo {
+    padding-left: 180px;
+}
+
+.searchbox {
+    margin-top: 20px;
+}
+
+
+/*.gsri_a {
+    background: url();
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 23px;
+    width: 17px;
+    vertical-align: middle;
+}*/
+.searchbox {
+  border: 1px solid #f2f2f2;
+  width: 440px;
+  display: inline-block;
+  height: 35px;
+}
+.searchbox input {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 2px;
+    height: 19px;
+    width: 380px;
+}
+/*.searchbox input:focus {
+  border: none;
+}*/
+.searchbox img {
+  float: right;
+  height: 35px;
+  width: 35px;
+}
+
+.buttons {
+    margin: 2px;
+    padding: 5px;
+    height: 36px;
+    line-height: 27px;
+    margin-top: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+}
+
+#flr {
+    margin-right: 30px;
+    float: right;
+}
+
+#flr a {
+    padding: 10px;
+}
+
+#fll {
+    margin-left: 30px;
+    float: left;
+}
+
+#fll a {
+    padding: 10px;
+}
