@@ -1,0 +1,42 @@
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:960px;
+	width:960px;
+	padding: 0;
+	border: none;
+}
+
+.controls {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.controls a {
+  background-color: #3E474E;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  line-height: 40px;
+  margin: 25px auto;
+  border-radius: 4px;
+  font-family: sans-serif, Arial, Helvetica;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.controls a:hover {
+  background-color: #358adf;
+}
+
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+	display:inline-block;
+}
