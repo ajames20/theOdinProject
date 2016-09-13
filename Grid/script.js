@@ -5,17 +5,17 @@ function createGrid(i) {
             $("#container").append("<div class='grid'></div>");
         };
     };
-    $(".grid").width(960/i);
-    $(".grid").height(960/i);
+    $(".grid").width(960 / i);
+    $(".grid").height(960 / i);
 };
 
 
-function clearGrid(){
+function clearGrid() {
     $(".grid").remove();
 };
 
 
-function gridRefresh(){
+function gridRefresh() {
     var z = prompt("How many boies per side?");
     clearGrid();
     createGrid(z);
@@ -29,13 +29,13 @@ $(document).ready(function() {
 
     $(".grid").mouseover(function() {
         $(this).css("background-color", "#358adf");
-        });
+    });
 
     $(".newGrid").click(function() {
         gridRefresh();
 
         $(".grid").mouseover(function() {
-        $(this).css("background-color", "#358adf");
+            $(this).css("background-color", "#358adf");
         });
     });
 
@@ -44,7 +44,17 @@ $(document).ready(function() {
         createGrid(16);
 
         $(".grid").mouseover(function() {
-          $(this).css("background-color", "#358adf");
+            $(this).css("background-color", "#358adf");
         });
-      });
+    });
+
+    $(".random").click(function() {
+          clearGrid();
+          createGrid(16);
+
+          $(".grid").mouseover(function() {
+              $(this).css('background-color', 'rgb(' + (Math.floor(Math.random() * 256)) + ', ' +
+              (Math.floor(Math.random() * 256)) + ', ' + (Math.floor(Math.random() * 256)) + ')');
+          });
+    });
 });
