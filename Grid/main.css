@@ -8,12 +8,17 @@
 	width:960px;
 	padding: 0;
 	border: none;
+
 }
 
 .controls {
   width: 100%;
   margin: 20px auto;
   text-align: center;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.controls h1 {
+  font-size: 3em;
 }
 
 .controls a {
